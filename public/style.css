@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: rgb(36, 33, 33);
+    color: white;
+}
+
+.heading {
+    color: white;
+    text-align: center;
+    margin-bottom: 24px;
+    margin-top: 30px;
+    font-size: 47px;
+}
+
+.form-heading {
+    color: white;
+    text-align: center;
+    margin-bottom: 24px;
+    margin-top: 20px;
+    font-size: 47px;
+}
+
+form {
+    margin-bottom: 20px;
+    display: inline;
+    text-wrap: wrap;
+}
+
+.blog-buttons {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    position: relative;
+}
+
+input,
+textarea {
+    border-color:  rgb(64, 62, 62);
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-wrap: wrap;
+    box-sizing: border-box;
+    background-color: rgb(53, 50, 50);
+    font-size: 17px;
+    overflow: auto;
+}
+
+textarea {
+    height: 60vh;
+}
+
+textarea {
+    resize: vertical;
+    /* Allow users to resize the textarea vertically */
+    white-space: pre-wrap;
+    /* Ensure text wraps inside the textarea */
+    overflow-wrap: break-word;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.custom {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+li {
+    border: 3px solid rgb(64, 62, 62);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    width: 44%;
+    height: 50%;
+    text-wrap: wrap;
+    background-color: rgb(53, 50, 50);
+}
+
+li h2 {
+    text-align: center;
+}
+
+.create-btn{
+    font-size: 20px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 35px;
+}
+form label{
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ul li {
+        width: 100%;
+    }
+
+}
+@media (max-width: 657px) {
+    .form-heading, .heading{
+        font-size: 35px;
+    }
+    .create-btn{
+        font-size: 17px;
+    }
+
+}
+@media (max-width: 514px) {
+    .form-heading, .heading{
+        font-size: 30px;
+    }
+
+}
